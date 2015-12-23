@@ -1,0 +1,63 @@
+body {
+  background-color: $light-gray;
+}
+
+.top h1 {
+  @include mui-animation(fade());
+  animation-duration: 2s;
+  margin-top: 3rem;
+  color: $darker-gray;
+}
+
+.top a:hover {
+  color: $primary-color;
+}
+
+.top h4 {
+  @include mui-animation(fade());
+  animation-duration: 2s;
+  color: $dark-gray;
+}
+
+.top a {
+  font-weight: 700;
+  color: $body-font-color;
+}
+
+.body {
+  margin-top: 3rem;
+}
+
+.tracker {
+  @include mui-animation(slide(in, up, 40px), fade);
+  animation-duration: 1s;
+  text-align: center;
+
+}
+
+.tracker p {
+  font-size: 120px;
+  font-weight: 100;
+}
+
+.tracker a {
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $medium-gray;
+}
+
+.tracker a:hover {
+  color: $primary-color;
+}
+
+.callout {
+  border: none;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.07);
+}
+
+.normal p {color: $darkest-gray;}
+.in-progress p {color: $warning-color;}
+.blocked p {color: $alert-color;}
+.complete p {color: $success-color;}
